@@ -51,8 +51,17 @@ div.blockContentStyling {
 	display: inline;
 }
 
+@media (max-width: 767px) {
+  #intro .item h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+}
+
 .carousel-caption {
 	text-align: left;
+	font-family: 'Coda', Arial, sans-serif;
 }
 
 .introTextSpan {
@@ -129,6 +138,12 @@ li.navLi {
  	color: #004273;
  }
 
+ @media (max-width: 768px) {
+	.main-nav {
+		height: 90px;
+	}
+}
+
 .main-nav > a:hover, a:active {
   	 text-decoration: none;
   	 background-color: #f1f1f1;
@@ -148,21 +163,27 @@ li.navLi {
 	padding-top: 200px 50px 50px;
 } 
 
-/*#intro .item, */.main-nav-scrolled {
+.main-nav-scrolled {
   position: fixed;
   width: 100%;
   top: 74px;
 }
+
+@media (max-width: 768px){
+	.main-nav-scrolled {
+		top: 60px;
+	}
+}
+
+
 /* END STICKY HEADER */
 
 
 
 div.row.services > div.col-md-3 {
 	padding: 0px;
+	padding-left: 70px;
 }
-
-
-
 
 div.generalFieldsKeywords h5, p {
 	display: inline;
@@ -295,9 +316,22 @@ h2.title.FAQTitle {
 	font-size: 18px;
 }
 
+
+.contactUsEmail {
+	color: #002952 ; 
+	font-size: 130%;
+}
+
 .collaboratorDiv {
 	border-left-color: black;
 	border-left-style: solid;
+	height: 350px;
+	padding-top: 50px;
+	padding-bottom: 95px;
+}
+
+#datasocietylogo {
+	padding-top: 50px;
 }
 
 /* Underline From Left */
@@ -334,9 +368,58 @@ h2.title.FAQTitle {
 }
 
 #mobile-search {
-	overflow: auto;
+	height: 66px;
 }
 
-#mobile-menu {
-	overflow: auto;
+.mobile-menu a {
+	color: #004273;
+}
+
+
+
+
+
+.region-mobile-menu .block-menu-engage-follow h2.block-title {
+  display: none;
+}
+.region-mobile-menu .block-menu-engage-follow ul.menu {
+  text-align: center;
+}
+.region-mobile-menu .block-menu-engage-follow ul.menu li {
+  display: inline-block;
+}
+.region-mobile-menu .block-menu-engage-follow ul.menu li a {
+  border: none !important;
+  text-align: center;
+  background: none;
+}
+.region-mobile-menu .block-menu-engage-follow ul.menu li a:hover {
+  background: none;
+  color: inherit;
+}
+.region-mobile-menu .block-menu-engage-follow ul.menu li a:before, .region-mobile-menu .block-menu-engage-follow ul.menu li .polyfill-icon {
+  margin-right: 0;
+  color: green;
+}
+
+.mobileIconDiv span {
+	display: none;
+}
+
+
+@media only screen 
+and (max-width : 480px) 
+and (orientation : portrait) {
+	.contactUsH3 {
+		text-align:center;
+	}
+
+	.contactUsEmail {
+		text-align: center;
+	}
+
+	.collaboratorDiv {
+		border-left-color: white;
+		padding-bottom: 0px;
+	}
 }
